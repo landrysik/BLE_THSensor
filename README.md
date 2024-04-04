@@ -18,9 +18,9 @@ This is the final result - thermoemter with remote sensing probe.
 To do the actual mod, open the thermometer body and desolder the original sensing chip (hot air or just be bit brutal with soldering iron, we won't need the chip...)
 Drill the hole in the top cover and feed through the wire from the SHT40 sensing probe. Solder the wires according to the image below directly on the ZTU module (it has nice thick pads).![PXL_20240307_183910697](https://github.com/landrysik/BLE_THSensor/assets/124715451/11ee4473-1e1f-4232-a5e7-961d3af75bef)
 
-The thermometer should work (transmit BLE packets) and you should be able to connect with TelinkFlasher to modify settings etc. But will report 0.0°C/0% RH as it has now unknown chip.
+The thermometer should work (transmit BLE packets) and you should be able to connect with [TelinkMiFlasher.html](https://pvvx.github.io/ATC_MiThermometer/TelinkMiFlasher.html) to modify settings etc. But will report 0.0°C/0% RH as it has now unknown chip and still "original" firmware
 ## Flash the modified firmware
-Open Telink Flasher (see original pvvx site) and select firmware update file and flash the modified .bin file.
+Open [TelinkMiFlasher.html](https://pvvx.github.io/ATC_MiThermometer/TelinkMiFlasher.html) and select firmware update file and flash the modified .bin file.
 After flashing the thermometer should work as usual and report correct temperature and relative humidity.
 
-If anybody reads this - (work in progress, will add more info later) And yes, the actual firmware :)
+If anybody reads this - (work in progress, will add more info later) And yes, I will add the actual firmware soon :)
